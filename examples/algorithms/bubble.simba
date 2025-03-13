@@ -1,0 +1,13 @@
+vector vec = [102, 55, 43, 90, 5];
+var i, iter, j = 0, 0, 4;
+
+for (; j >= 1; j--) {
+    for (i = 0; i < j; i++) {
+        iter = i + 1;
+        if (vec[iter] <= vec[i]) {
+            swap (vec, i, iter);
+        }
+    }
+}
+
+print (vec);

@@ -1,0 +1,23 @@
+var iter,rows,columns = 0,10,19;
+var lb, ub = 0, 0;
+lb = rows - 2;
+ub = rows;
+
+while (ub <= columns) {
+    for (iter = 0; iter < columns; iter++) {
+        if (iter <= lb) {
+            print(" ");
+        }
+        if (iter >= ub) {
+            print(" ");
+        }
+        if (iter > lb) {
+            if (iter < ub) {
+                print("+");
+            }
+        }
+    }
+    lb - 1;
+    ub + 1;
+    printn("");
+}
